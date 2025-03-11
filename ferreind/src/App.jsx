@@ -9,9 +9,8 @@ function App() {
     setFile(event.target.files[0]);
   };
 
-const handleUploadclear = () => {
-  if (file) {
-   
+const handleUpload = () => {
+  if (file) {   
     const newQuotation = {
       id: quotations.length + 1, 
       name: file.name, 
